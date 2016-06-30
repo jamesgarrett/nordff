@@ -74,9 +74,9 @@
         <!-- /.intro-header -->
         <div class="intro-header call-to-action">
             <div class="row">
-                <div class="col-lg-12 call-to-action">
+                <div class="col-lg-12 logo-header">
                     <div class="col-md-6 col-md-offset-3">
-                        <img src="<? bloginfo('stylesheet_directory'); ?>/img/logo.svg" alt="nff logo">
+                        <img src="http://www.nordff.architects.agency/wp-content/uploads/2016/06/170-Nord-Logo.svg" alt="nff logo" height="215">
                     </div>
                 </div>
             </div>
