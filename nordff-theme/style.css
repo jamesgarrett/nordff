@@ -79,6 +79,10 @@ ul.nav.navbar-nav.navbar-right {
   background-size: cover;
   padding: 15vh 0; }
 
+@media (max-width: 481px) {
+  .logo-header img {
+    height: auto;
+    width: 215px; } }
 .center-nav {
   float: none;
   display: inline-block;
@@ -272,7 +276,6 @@ select {
   display: inline-block; }
 
 .project-list a:hover {
-  background: powderblue;
   text-decoration: none; }
 
 .project-list a.current {
@@ -404,6 +407,7 @@ span.previous {
 .read-more--button h2 {
   width: 100%;
   background: #222;
+  font-family: "Open Sans", "Lato", "Futura", Arial, Sans-serif;
   padding: 25px 15px;
   color: white; }
 
@@ -467,6 +471,7 @@ ul.thumb-cat {
   font-size: 1.75rem;
   text-transform: uppercase; }
   .panel-lower h4 strong {
+    font-family: "Open Sans", "Lato", "Futura", Arial, Sans-serif;
     letter-spacing: 0.1rem;
     font-size: 2rem; }
 

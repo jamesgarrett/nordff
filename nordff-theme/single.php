@@ -18,20 +18,21 @@ get_header();
     </div>
     <div class="spacer" style="margin-top:50px;"></div>
     <div id="sticky-anchor"></div>
-    <div class="project-list col-md-3" id="sticky">
-        <h4>CATEGORY FILTERS</h4>
+    <aside class="project-list col-md-3" id="sticky">
+        <h4>PROGRAM AREAS</h4>
         <?$menu = array(
             "title_li"    => "",
             "link_before" => '<span class="featured-title">',
             "link_after"  => '</span>',
             "depth"       => '1',
+            "exclude"     => '10',
         );?>
         <ul>
         <?php  wp_list_categories( $menu ); ?> 
         </ul>
         <span class="previous arrow"><?php next_post_link('%link', '&#8249; Newer'); ?></span>
         <span class="next arrow"><?php previous_post_link('%link', 'Older &#8250;'); ?></span>
-    </div>
+    </aside>
     <div class="col-md-6 article--body">
             <?php echo wpautop($post->post_content); ?>
         </div>

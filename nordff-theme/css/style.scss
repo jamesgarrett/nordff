@@ -107,6 +107,13 @@ ul.nav.navbar-nav.navbar-right {
   padding:15vh 0;
 }
 
+@media (max-width: 481px) {
+    .logo-header img {
+      height: auto;
+      width: 215px;
+  }
+}
+
 .center-nav {
   float:none;
   display:inline-block;
@@ -242,6 +249,7 @@ ul.thumb-cat{
     font-size: 1.75rem;
     text-transform: uppercase;
     strong{
+      font-family: $font-sans-2;
       letter-spacing: 0.1rem;
       font-size: 2rem;
     }

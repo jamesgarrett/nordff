@@ -9,6 +9,8 @@ Template Name: home
     
     <!-- Get the Filter Navigation Box -->
     <? get_template_part('subnav'); ?>
+
+
     
     <div class="container">     
         <div class="col-md-12">
