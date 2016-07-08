@@ -363,7 +363,7 @@ span.previous {
   background: white;
   padding: 10px 15px; }
 
-.single > .col-md-12 h1 {
+h1.col-md-10.col-md-offset-1 {
   background: rgba(0, 0, 0, 0.84);
   font-family: "freight-text-pro", "Proxima-Nova", "Times New Roman", Serif;
   font-weight: 600;

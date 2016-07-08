@@ -86,4 +86,12 @@ function my_mce_before_init_insert_formats( $init_array ) {
 
 add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' );
 
- ?>
+?>
+
+<?php 
+add_action('init', 'init_remove_support',100);
+function init_remove_support(){
+    $post_type = 'podcast';
+    remove_post_type_support( $post_type, 'editor');
+}
+?>

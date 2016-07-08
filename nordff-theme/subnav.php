@@ -4,9 +4,9 @@
 			<h2><?php wp_title(''); ?></h2>
 		</div>
 		<ul class="">
-            <li><a href="/archive">Articles</a></li>
-            <li><a href="/archive">Videos</a></li>
-            <li><a href="/archive">Podcasts</a></li><br>
+            <li><a href="/archive#subnav">Articles</a></li>
+            <li><a href="/archive#subnav">Videos</a></li>
+            <li><a href="/podcast#subnav">Podcasts</a></li><br>
             <?php
             global $id;
             wp_list_categories( array(

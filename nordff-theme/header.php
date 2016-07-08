@@ -77,6 +77,7 @@
                 <div class="col-lg-12 logo-header">
                     <div class="col-md-6 col-md-offset-3">
                         <img src="http://www.nordff.architects.agency/wp-content/uploads/2016/06/170-Nord-Logo.svg" alt="nff logo" height="215">
+                        <span id="subnav"></span>
                     </div>
                 </div>
             </div>

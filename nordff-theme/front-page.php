@@ -55,7 +55,6 @@ Template Name: frontpage
     <div class="row portfolio">
             <?
             $article = array(
-                'post_type'      => 'post',
                 'posts_per_page' => '6',
                 'orderby'        => 'date',
                 'order'          => 'DESC',
@@ -108,13 +107,13 @@ Template Name: frontpage
     <div class="spacer" style="margin-top:50px;"></div>
     <div class="row">
         <div class="col-md-4 explore" style="padding-left:0px;padding-right:0px;">
-            <div class="panel-upper " style="height:300px;background-position:center;background-size:cover;background-image:url('<? bloginfo('stylesheet_directory'); ?>/img/hp-7.png');"><h4><a href="#">Articles</a></h4></div>
+            <div class="panel-upper " style="height:300px;background-position:center;background-size:cover;background-image:url('<? bloginfo('stylesheet_directory'); ?>/img/hp-7.png');"><h4><a href="<?php get_stylesheet_directory_uri(); ?>/archive">Articles</a></h4></div>
         </div>
         <div class="col-md-4 explore" style="padding-left:0px;padding-right:0px;">
-            <div class="panel-upper" style="height:300px;background-position:center;background-size:cover;background-image:url('<? bloginfo('stylesheet_directory'); ?>/img/hp-8.png');"><h4><a href="#">Videos</a></h4></div>
+            <div class="panel-upper" style="height:300px;background-position:center;background-size:cover;background-image:url('<? bloginfo('stylesheet_directory'); ?>/img/hp-8.png');"><h4><a href="<?php get_stylesheet_directory_uri(); ?>/video">Videos</a></h4></div>
         </div>
         <div class="col-md-4 explore" style="padding-left:0px;padding-right:0px;">
-            <div class="panel-upper" style="height:300px;background-position:center;background-size:cover;background-image:url('<? bloginfo('stylesheet_directory'); ?>/img/hp-9.png');"><h4><a href="#">Podcasts</a></h4></div>
+            <div class="panel-upper" style="height:300px;background-position:center;background-size:cover;background-image:url('<? bloginfo('stylesheet_directory'); ?>/img/hp-9.png');"><h4><a href="<?php get_stylesheet_directory_uri(); ?>/podcast">Podcasts</a></h4></div>
         </div>
     </div>
 </div> <!-- /CONTAINER-FLUID -->

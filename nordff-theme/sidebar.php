@@ -1,18 +1,18 @@
-<div class="col-md-12 col-lg-10 col-lg-offset-1">
-	<div class="subnav">
-		<div class="col-lg-4 col-md-4 featured-title">
-			<h2><?php the_title(); ?></h2>
-		</div>
-		<ul class="col-lg-6 col-md-6">
-            <?php
-            global $id;
-            wp_list_pages( array(
-                'title_li'    => '',
-                'child_of'    => $id,
-                'show_date'   => 'modified',
-                'date_format' => $date_format
-            ) );
-            ?>
-		</ul>
-	</div>
-</div><!-- /col-lg-8 -->
+<div id="sticky-anchor"></div>
+
+<aside class="project-list col-md-3" id="sticky">
+    <h4>PROGRAM AREAS</h4>
+    <li><a href="<?php get_stylesheet_directory_uri(); ?>/archive#subnav">ALL POSTS</a></li>
+    <?$menu = array(
+        "title_li"    => "",
+        "link_before" => '<span class="featured-title">',
+        "link_after"  => '</span>',
+        "depth"       => '1',
+        "exclude"     => '10',
+    );?>
+    <ul>
+    <?php  wp_list_categories( $menu ); ?> 
+    </ul>
+    <span class="previous arrow"><?php next_post_link('%link', '&#8249; Newer'); ?></span>
+    <span class="next arrow"><?php previous_post_link('%link', 'Older &#8250;'); ?></span>
+</aside>
